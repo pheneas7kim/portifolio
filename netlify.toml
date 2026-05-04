@@ -8,8 +8,7 @@
 [[plugins]]
   package = "@netlify/plugin-nextjs"
 
-# Optional but recommended: ensures all routes work correctly
 [[redirects]]
   from = "/*"
-  to = "/"
+  to = "/.netlify/functions/nextjs-server"
   status = 200
