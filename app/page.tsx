@@ -882,7 +882,7 @@ Open ports: 22, 80, 443, 3306`
                       {module.level}
                     </Badge>
                   </div>
-                  {module.progress > 0 && (
+                  {(module.progress ?? 0) > 0 && (
                     <div className="absolute bottom-2 left-2 right-2">
                       <div className="bg-black/50 backdrop-blur-sm rounded-full px-2 py-1">
                         <div className="text-white text-xs mb-1">Progress: {module.progress}%</div>
